@@ -7,7 +7,3 @@ My name is [Moon Shinwoo](http://twitter.com/dancow)
 * [Eye Heart New York](http://tumblr.eyeheartnewyork.com) - A Tumblr of my New York photos
 
 * [I Heart NY Museums](http://iheartnymuseums.com/) - A really old interactive map showing open/free hours at local museums
-
-A picture of someone playing the didgeridoo
-
-![alt text](http://i.imgur.com/2i35DTo.jpg)
