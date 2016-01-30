@@ -1,15 +1,13 @@
-# chocoma87.github.io
+# chocoma87's Portfolio
 
-## Hello world!
+My name is [Moon Shinwoo](http://twitter.com/dancow)
 
-This is my first try at github!
+* [Bastards Book of Regular Expressions](http://regex.bastardsbook.com/)  - A free ebook on how to use regular expressions for everyday informational purposes
 
-My Github user page is at: 
-https://github.com/chocoma87/
+* [Eye Heart New York](http://tumblr.eyeheartnewyork.com) - A Tumblr of my New York photos
 
-My Github Pages repo can be found at:  
-https://github.com/chocoma87/chocoma87.github.io/
+* [I Heart NY Museums](http://iheartnymuseums.com/) - A really old interactive map showing open/free hours at local museums
 
-And, soon, you can see my customized homepage at:
+A picture of someone playing the didgeridoo
 
-http://chocoma87.github.io/
+![alt text](http://i.imgur.com/2i35DTo.jpg)
