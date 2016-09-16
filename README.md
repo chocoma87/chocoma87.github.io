@@ -22,7 +22,7 @@
 
  사용언어 : HTML, CSS, Javascript, jQuery
 
-* [리봄](http://iheartnymuseums.com/) - 리봄 한의원 웹사이트 UI 제작, XE 게시판 수정하여 뷰단 변경
+* [리봄](http://iheartnymuseums.com/) - 리봄 한의원 웹사이트 UI 제작
 
  사용언어 : HTML, CSS, Javascript, jQuery
 
