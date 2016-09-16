@@ -1,0 +1,798 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>FDUX Library</title>
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/library.css">
+	<link rel="stylesheet" type="text/css" href="css/skin.css">
+</head>
+
+
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="gnbLibrary">
+			<div class="gnbLibrary-top">
+				<h1 class="logo"><a href="./index.php"><img src="images/logo.png" alt="XELF"/></a></h1>
+
+				<div class="selectTheme">
+					<a href="#" class="current">Black Skin</a>
+					<ul class="selectTheme-list">
+						<li><a href="#skinBlackGnb" data-skin="black">Black Skin</a></li>
+						<li><a href="#skinWhiteGnb" data-skin="white">White Skin</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="gnbLibrary-list active" id="skinBlackGnb">
+				<li class="active">
+					<a href="#" class="gnbLibrary-title">UI 기본 요소</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="./index.php">버튼 (33개)</a></li>
+						<li><a href="./basic_image.php">이미지 (2개)</a></li>
+						<li><a href="./basic_text.php">텍스트 (3개)</a></li>
+						<li><a href="./basic_table.php">태이블 (2개)</a></li>
+						<li><a href="./basic_shape.php">도형 (5개)</a></li>
+						<li><a href="">그래프</a></li>
+						<li><a href="">아이콘</a></li>
+						<li><a href="">컬러</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">폼</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="./form_basic.php">일반 폼 (14개)</a></li>
+						<li><a href="./form_extra.php">특수 폼 (4개)</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">출력</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="./print_message.php">알림 메세지 창 (4개)</a></li>
+						<li><a href="./print_tooltip.php">툴팁 (3개)</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">일반웹 위젯</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="./widget_header.php">헤더 (4개)</a></li>
+						<li><a href="./widget_footer.php">푸터 (2개)</a></li>
+						<li><a href="./widget_slider.php">슬라이더 (5개)</a></li>
+						<li><a href="./widget_post.php">최근 글 리스트 (7개)</a></li>
+						<li><a href="./widget_postDetail.php">상세보기 (개)</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">쇼핑몰 위젯</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="">버튼</a></li>
+						<li><a href="">이미지</a></li>
+						<li><a href="">텍스트</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">관리자 위젯</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="">버튼</a></li>
+						<li><a href="">이미지</a></li>
+						<li><a href="">텍스트</a></li>
+					</ul>
+				</li>
+			</ul>
+
+
+			<ul class="gnbLibrary-list" id="skinWhiteGnb">
+				<li class="active">
+					<a href="#" class="gnbLibrary-title">UI 기본 요소</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="black_button.php">버튼</a></li>
+						<li><a href="">이미지</a></li>
+						<li><a href="">텍스트</a></li>
+						<li><a href="">리스트</a></li>
+						<li><a href="">도형</a></li>
+						<li><a href="">그래프</a></li>
+						<li><a href="">아이콘</a></li>
+						<li><a href="">컬러</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">폼</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="">버튼</a></li>
+						<li><a href="">이미지</a></li>
+						<li><a href="">텍스트</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">출력</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="">버튼</a></li>
+						<li><a href="">이미지</a></li>
+						<li><a href="">텍스트</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">일반웹 위젯</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="">버튼</a></li>
+						<li><a href="">이미지</a></li>
+						<li><a href="">텍스트</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">쇼핑몰 위젯</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="">버튼</a></li>
+						<li><a href="">이미지</a></li>
+						<li><a href="">텍스트</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="gnbLibrary-title">관리자 위젯</a>
+					<ul class="gnbLibrary-depth2">
+						<li><a href="">버튼</a></li>
+						<li><a href="">이미지</a></li>
+						<li><a href="">텍스트</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="contents skinBlack">
+
+			<div class="pageHeader">
+				<h2 class="pageHeader-title">버튼 (33개)</h2>
+				<ul class="bredcrumb">
+					<li><a href="#">UI 기본 요소</a></li>
+					<li><a href="#">버튼</a></li>
+				</ul>
+			</div>
+
+
+			<section class="section">
+				<h3 class="section-title">기본형 버튼</h3>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<a href="" class="button big">버튼</a>
+						<a href="" class="button white big">버튼</a>
+					</div>
+					<div class="section-content">
+						<a href="" class="button">버튼</a>
+						<a href="" class="button white">버튼</a>
+					</div>
+					<div class="section-content">
+						<a href="" class="button small">버튼</a>
+						<a href="" class="button white small">버튼</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<h3 class="section-title">아이콘 버튼</h3>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<a href="" class="button hasIcon">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<polygon points="7.354 11.436 6.646 12.143 12 17.497 17.354 12.143 16.646 11.436 12.5 15.582 12.5 2.497 11.5 2.497 11.5 15.582 7.354 11.436"/>
+									<polygon points="15.002 5.502 15.002 6.502 21.001 6.502 21.001 20.503 2.999 20.503 2.999 6.502 8.998 6.502 8.998 5.502 1.999 5.502 1.999 21.503 22.001 21.503 22.001 5.502 15.002 5.502"/>
+								</g>
+							</svg>
+							<span>다운로드</span>
+						</a>
+						<a href="" class="button hasIcon white">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<polygon points="7.354 11.436 6.646 12.143 12 17.497 17.354 12.143 16.646 11.436 12.5 15.582 12.5 2.497 11.5 2.497 11.5 15.582 7.354 11.436"/>
+									<polygon points="15.002 5.502 15.002 6.502 21.001 6.502 21.001 20.503 2.999 20.503 2.999 6.502 8.998 6.502 8.998 5.502 1.999 5.502 1.999 21.503 22.001 21.503 22.001 5.502 15.002 5.502"/>
+								</g>
+							</svg>
+							<span>다운로드</span>
+						</a>
+					</div>
+					<div class="section-content">
+						<a href="" class="iconList new">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<polygon class="cls-1" points="15.503 3.415 15.503 6 18.087 6 15.503 3.415"/>
+									<path class="cls-2" d="M5,21.5V2.5h9.5889l0,0h-.0858V7H19v7.0016l1,.0006V6.5l-4.9974-5H4V22.5H17.5018l-.0006-1ZM15.5032,3.4148,18.0867,6H15.5032Z"/>
+								</g>
+								<polygon class="cls-2" points="22.5 19 22.5 18.001 19.504 18.001 19.504 14.995 18.504 14.995 18.504 18.001 15.494 18.001 15.494 19 18.504 19 18.504 21.993 19.504 21.993 19.504 19 22.5 19"/>
+							</svg>
+							<span>새글</span>
+						</a>
+						<a href="" class="iconList edit">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<rect class="cls-1" x="11.1248" y="16.9217" width="12.9094" height="0.9999" transform="translate(-7.1701 17.5326) rotate(-44.9985)"/>
+									<polygon class="cls-1" points="12.501 22.5 13.208 22.5 12.501 21.793 12.501 22.5"/>
+									<polygon class="cls-1" points="18.998 21.5 15.209 21.5 14.209 22.5 19.998 22.5 19.998 16.724 18.998 17.724 18.998 21.5"/>
+									<path class="cls-1" d="M4.9974,2.5h9.5889l0,0H14.501V7H18.998v7.2911l.5034-.5034.4966-.4966V6.5l-4.9974-5H3.9974V22.5h6.7964l.5065-.5064.4936-.4936H4.9974Zm10.5035.9152L18.0844,6H15.501Z"/>
+								</g>
+							</svg>
+							<span>글 수정</span>
+						</a>
+						<a href="" class="iconList delete">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<polygon class="cls-1" points="22.501 16.218 21.794 15.511 19.003 18.301 16.213 15.511 15.506 16.218 18.296 19.008 15.506 21.799 16.213 22.506 19.003 19.715 21.794 22.506 22.501 21.799 19.71 19.008 22.501 16.218"/>
+									<g>
+										<polygon class="cls-2" points="15.503 3.415 15.503 6 18.087 6 15.503 3.415"/>
+										<path class="cls-1" d="M5,21.5V2.5h9.5889l0,0h-.0858V7H19V17.3034l1-1V6.5l-4.9974-5H4V22.5h9.8037l1-1ZM15.5033,3.4148,18.0867,6H15.5033Z"/>
+									</g>
+								</g>
+							</svg>
+							<span>글 삭제</span>
+						</a>
+					</div>
+					<div class="section-content">
+						<a href="" class="icon">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<path d="M17.2784,2.0385V5.3014c-.6663,0-1.31-.024-1.9511.0052-1.2106.0551-1.5823.3922-1.6619,1.5764-.0518.77-.01,1.5462-.01,2.3956H17.178l-.4541,3.597H13.6613V22H9.9862V12.9145H6.9319V9.2925H9.9983c0-1.1151-.05-2.166.01-3.2106a4.0529,4.0529,0,0,1,3.5842-4.0212C14.7813,1.9386,15.9927,2.0385,17.2784,2.0385Z"/>
+							</svg>
+						</a>
+
+						<a href="" class="icon">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<path class="cls-1" d="M2.2239,11.5a9.9766,9.9766,0,0,1,9.9736-9.4914,10.1333,10.1333,0,0,1,6.6793,2.4683,35.5977,35.5977,0,0,1-2.5352,2.6259c-2.2726-1.5708-5.5048-2.02-7.7774-.2053a6.4017,6.4017,0,0,0-.2721,9.9784c3.0413,2.76,8.79,1.3893,9.63-2.836-1.905-.0286-3.8147,0-5.72-.0621-.0048-1.1363-.01-2.2726-.0048-3.4089,3.1845-.01,6.369-.0143,9.5583.01a11.4627,11.4627,0,0,1-1.8047,7.73c-2.4874,3.5-7.4814,4.5213-11.3773,3.0222A10.0065,10.0065,0,0,1,2.2239,11.5Z"/>
+							</svg>
+						</a>
+
+						<a href="" class="icon">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<path class="cls-1" d="M23,4.9357a7.4717,7.4717,0,0,1-.7177.9854,9.1714,9.1714,0,0,1-1.455,1.3762.1261.1261,0,0,0-.0533.1164c.0033.2818.0083.5641.0033.8467a13.1548,13.1548,0,0,1-.2986,2.5053,14.2363,14.2363,0,0,1-1.1635,3.3479A13.598,13.598,0,0,1,17.3486,17.07,12.2815,12.2815,0,0,1,13.6656,19.95a12.1925,12.1925,0,0,1-3.2929,1.1085,12.4928,12.4928,0,0,1-1.6054.1934c-.3467.02-.6932.0371-1.04.03a13.3723,13.3723,0,0,1-1.7878-.1562,12.4771,12.4771,0,0,1-3.3932-1.0532A11.4843,11.4843,0,0,1,1,19.1921a8.918,8.918,0,0,0,6.64-1.9453c-.1532-.019-.3049-.0306-.4559-.05A4.2543,4.2543,0,0,1,5.61,16.6794a4.618,4.618,0,0,1-1.9552-2.123,4.8355,4.8355,0,0,1-.1941-.4939c-.0236-.0695-.0044-.0819.057-.0695a4.1049,4.1049,0,0,0,.9383.0687,4.3578,4.3578,0,0,0,1.01-.1595A4.5536,4.5536,0,0,1,2.44,11.6232,4.7037,4.7037,0,0,1,1.85,9.251a4.4556,4.4556,0,0,0,2.0384.58A4.6753,4.6753,0,0,1,2,6.9819a4.7827,4.7827,0,0,1,.49-3.3991.8013.8013,0,0,1,.14.1595A13.1016,13.1016,0,0,0,5.003,6.01,12.6869,12.6869,0,0,0,8.11,7.7a12.3349,12.3349,0,0,0,2.03.5692,12.088,12.088,0,0,0,1.5871.1958c.0822.0049.0993-.0132.0828-.1a4.7149,4.7149,0,0,1,.61-3.4669,4.4389,4.4389,0,0,1,6.7868-1.0359c.102.0885.1969.1859.2909.2841a.1138.1138,0,0,0,.1185.038,8.9059,8.9059,0,0,0,2.659-1.0357.7.7,0,0,1,.13-.0636,4.7,4.7,0,0,1-1.9226,2.549,3.0851,3.0851,0,0,0,.509-.0685c.1716-.0338.343-.07.5126-.1124q.2588-.0655.5135-.1461c.1672-.053.3322-.1131.4963-.176C22.6769,5.07,22.8378,5.0019,23,4.9357Z"/>
+							</svg>
+						</a>
+
+						<a href="" class="icon">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<path class="cls-1" d="M16.3081,4a3.7331,3.7331,0,0,1,3.7288,3.7288v8.5423A3.7331,3.7331,0,0,1,16.3081,20H7.7657a3.7331,3.7331,0,0,1-3.7289-3.7288V7.7288A3.7331,3.7331,0,0,1,7.7657,4h8.5423m0-2H7.7657A5.7288,5.7288,0,0,0,2.0369,7.7288v8.5423A5.7288,5.7288,0,0,0,7.7657,22h8.5423a5.7288,5.7288,0,0,0,5.7288-5.7288V7.7288A5.7288,5.7288,0,0,0,16.3081,2Z"/>
+									<path class="cls-1" d="M12.0369,9a3,3,0,1,1-3,3,3.0034,3.0034,0,0,1,3-3m0-2a5,5,0,1,0,5,5,5,5,0,0,0-5-5Z"/>
+									<circle class="cls-1" cx="17.392" cy="6.6458" r="1.0714"/>
+								</g>
+							</svg>
+						</a>
+					</div>
+
+					<div class="section-content">
+						<a href="" class="icon round">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<path d="M17.2784,2.0385V5.3014c-.6663,0-1.31-.024-1.9511.0052-1.2106.0551-1.5823.3922-1.6619,1.5764-.0518.77-.01,1.5462-.01,2.3956H17.178l-.4541,3.597H13.6613V22H9.9862V12.9145H6.9319V9.2925H9.9983c0-1.1151-.05-2.166.01-3.2106a4.0529,4.0529,0,0,1,3.5842-4.0212C14.7813,1.9386,15.9927,2.0385,17.2784,2.0385Z"/>
+							</svg>
+						</a>
+
+						<a href="" class="icon round">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<path class="cls-1" d="M2.2239,11.5a9.9766,9.9766,0,0,1,9.9736-9.4914,10.1333,10.1333,0,0,1,6.6793,2.4683,35.5977,35.5977,0,0,1-2.5352,2.6259c-2.2726-1.5708-5.5048-2.02-7.7774-.2053a6.4017,6.4017,0,0,0-.2721,9.9784c3.0413,2.76,8.79,1.3893,9.63-2.836-1.905-.0286-3.8147,0-5.72-.0621-.0048-1.1363-.01-2.2726-.0048-3.4089,3.1845-.01,6.369-.0143,9.5583.01a11.4627,11.4627,0,0,1-1.8047,7.73c-2.4874,3.5-7.4814,4.5213-11.3773,3.0222A10.0065,10.0065,0,0,1,2.2239,11.5Z"/>
+							</svg>
+						</a>
+
+						<a href="" class="icon round">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<path class="cls-1" d="M23,4.9357a7.4717,7.4717,0,0,1-.7177.9854,9.1714,9.1714,0,0,1-1.455,1.3762.1261.1261,0,0,0-.0533.1164c.0033.2818.0083.5641.0033.8467a13.1548,13.1548,0,0,1-.2986,2.5053,14.2363,14.2363,0,0,1-1.1635,3.3479A13.598,13.598,0,0,1,17.3486,17.07,12.2815,12.2815,0,0,1,13.6656,19.95a12.1925,12.1925,0,0,1-3.2929,1.1085,12.4928,12.4928,0,0,1-1.6054.1934c-.3467.02-.6932.0371-1.04.03a13.3723,13.3723,0,0,1-1.7878-.1562,12.4771,12.4771,0,0,1-3.3932-1.0532A11.4843,11.4843,0,0,1,1,19.1921a8.918,8.918,0,0,0,6.64-1.9453c-.1532-.019-.3049-.0306-.4559-.05A4.2543,4.2543,0,0,1,5.61,16.6794a4.618,4.618,0,0,1-1.9552-2.123,4.8355,4.8355,0,0,1-.1941-.4939c-.0236-.0695-.0044-.0819.057-.0695a4.1049,4.1049,0,0,0,.9383.0687,4.3578,4.3578,0,0,0,1.01-.1595A4.5536,4.5536,0,0,1,2.44,11.6232,4.7037,4.7037,0,0,1,1.85,9.251a4.4556,4.4556,0,0,0,2.0384.58A4.6753,4.6753,0,0,1,2,6.9819a4.7827,4.7827,0,0,1,.49-3.3991.8013.8013,0,0,1,.14.1595A13.1016,13.1016,0,0,0,5.003,6.01,12.6869,12.6869,0,0,0,8.11,7.7a12.3349,12.3349,0,0,0,2.03.5692,12.088,12.088,0,0,0,1.5871.1958c.0822.0049.0993-.0132.0828-.1a4.7149,4.7149,0,0,1,.61-3.4669,4.4389,4.4389,0,0,1,6.7868-1.0359c.102.0885.1969.1859.2909.2841a.1138.1138,0,0,0,.1185.038,8.9059,8.9059,0,0,0,2.659-1.0357.7.7,0,0,1,.13-.0636,4.7,4.7,0,0,1-1.9226,2.549,3.0851,3.0851,0,0,0,.509-.0685c.1716-.0338.343-.07.5126-.1124q.2588-.0655.5135-.1461c.1672-.053.3322-.1131.4963-.176C22.6769,5.07,22.8378,5.0019,23,4.9357Z"/>
+							</svg>
+						</a>
+
+						<a href="" class="icon round">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<path class="cls-1" d="M16.3081,4a3.7331,3.7331,0,0,1,3.7288,3.7288v8.5423A3.7331,3.7331,0,0,1,16.3081,20H7.7657a3.7331,3.7331,0,0,1-3.7289-3.7288V7.7288A3.7331,3.7331,0,0,1,7.7657,4h8.5423m0-2H7.7657A5.7288,5.7288,0,0,0,2.0369,7.7288v8.5423A5.7288,5.7288,0,0,0,7.7657,22h8.5423a5.7288,5.7288,0,0,0,5.7288-5.7288V7.7288A5.7288,5.7288,0,0,0,16.3081,2Z"/>
+									<path class="cls-1" d="M12.0369,9a3,3,0,1,1-3,3,3.0034,3.0034,0,0,1,3-3m0-2a5,5,0,1,0,5,5,5,5,0,0,0-5-5Z"/>
+									<circle class="cls-1" cx="17.392" cy="6.6458" r="1.0714"/>
+								</g>
+							</svg>
+						</a>
+					</div>
+
+					<div class="section-content">
+						<a href="" class="icon border">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<polygon class="cls-1" points="15.503 3.415 15.503 6 18.087 6 15.503 3.415"/>
+									<path class="cls-2" d="M5,21.5V2.5h9.5889l0,0h-.0858V7H19v7.0016l1,.0006V6.5l-4.9974-5H4V22.5H17.5018l-.0006-1ZM15.5032,3.4148,18.0867,6H15.5032Z"/>
+								</g>
+								<polygon class="cls-2" points="22.5 19 22.5 18.001 19.504 18.001 19.504 14.995 18.504 14.995 18.504 18.001 15.494 18.001 15.494 19 18.504 19 18.504 21.993 19.504 21.993 19.504 19 22.5 19"/>
+							</svg>
+						</a>
+
+						<a href="" class="icon border">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<rect class="cls-1" x="11.1248" y="16.9217" width="12.9094" height="0.9999" transform="translate(-7.1701 17.5326) rotate(-44.9985)"/>
+									<polygon class="cls-1" points="12.501 22.5 13.208 22.5 12.501 21.793 12.501 22.5"/>
+									<polygon class="cls-1" points="18.998 21.5 15.209 21.5 14.209 22.5 19.998 22.5 19.998 16.724 18.998 17.724 18.998 21.5"/>
+									<path class="cls-1" d="M4.9974,2.5h9.5889l0,0H14.501V7H18.998v7.2911l.5034-.5034.4966-.4966V6.5l-4.9974-5H3.9974V22.5h6.7964l.5065-.5064.4936-.4936H4.9974Zm10.5035.9152L18.0844,6H15.501Z"/>
+								</g>
+							</svg>
+						</a>
+
+						<a href="" class="icon border">
+							<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+								<title>svg5</title>
+								<g>
+									<polygon class="cls-1" points="22.501 16.218 21.794 15.511 19.003 18.301 16.213 15.511 15.506 16.218 18.296 19.008 15.506 21.799 16.213 22.506 19.003 19.715 21.794 22.506 22.501 21.799 19.71 19.008 22.501 16.218"/>
+									<g>
+										<polygon class="cls-2" points="15.503 3.415 15.503 6 18.087 6 15.503 3.415"/>
+										<path class="cls-1" d="M5,21.5V2.5h9.5889l0,0h-.0858V7H19V17.3034l1-1V6.5l-4.9974-5H4V22.5h9.8037l1-1ZM15.5033,3.4148,18.0867,6H15.5033Z"/>
+									</g>
+								</g>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<h3 class="section-title">드롭다운 버튼</h3>
+
+				<div class="section-contents">
+					<div class="section-content">
+
+						<div class="select">
+							<!-- id 속성 필수 -->
+							<select id="select1">
+								<option>선택</option>
+								<option>옵션1</option>
+								<option>옵션2</option>
+							</select>
+						</div>
+
+						<div class="select white">
+							<!-- id 속성 필수 -->
+							<select id="select2">
+								<option>선택</option>
+								<option>옵션1</option>
+								<option>옵션2</option>
+							</select>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section">
+				<h3 class="section-title">페이저 버튼</h3>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<div class="left">
+							<div class="pagination">
+								<a href="" class="prev">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<polygon points="15.646 20.354 7.293 12 15.646 3.646 16.354 4.354 8.707 12 16.354 19.646 15.646 20.354"/>
+									</svg>
+									<span>이전</span>
+								</a>
+								<ul class="pagination-list">
+									<li class="active"><a href="">1</a></li>
+									<li><a href="">2</a></li>
+									<li><a href="">3</a></li>
+									<li><a href="">4</a></li>
+									<li><a href="">5</a></li>
+									<li><a href="">6</a></li>
+									<li><a href="">7</a></li>
+									<li><a href="">8</a></li>
+									<li><a href="">9</a></li>
+									<li><a href="">10</a></li>
+								</ul>
+								<a href="" class="next">
+									<span>다음</span>
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<polygon points="8.354 20.354 7.646 19.646 15.293 12 7.646 4.354 8.354 3.646 16.707 12 8.354 20.354"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="section-content">
+						<div class="left">
+							<div class="pagination number">
+								<ul class="pagination-list">
+									<li class="active"><a href="">1</a></li>
+									<li><a href="">2</a></li>
+									<li><a href="">3</a></li>
+									<li><a href="">4</a></li>
+									<li><a href="">5</a></li>
+									<li><a href="">6</a></li>
+									<li><a href="">7</a></li>
+									<li><a href="">8</a></li>
+									<li><a href="">9</a></li>
+									<li><a href="">10</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="section-content">
+						<div class="left">
+							<div class="pagination text">
+								<ul class="pagination-list">
+									<li class="active"><a href="">페이저1</a></li>
+									<li><a href="">페이저2</a></li>
+									<li><a href="">페이저3</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-content">
+						<div class="col">
+							<a href="" class="pager border prev">
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<title>svg5</title>
+									<polygon points="15.646 20.354 7.293 12 15.646 3.646 16.354 4.354 8.707 12 16.354 19.646 15.646 20.354"/>
+								</svg>
+								<span>이전</span>
+							</a>
+							<a href="" class="pager border next">
+								<span>다음</span>
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<title>svg5</title>
+									<polygon points="8.354 20.354 7.646 19.646 15.293 12 7.646 4.354 8.354 3.646 16.707 12 8.354 20.354"/>
+								</svg>
+							</a>
+						</div>
+						<div class="col">
+							<a href="" class="pager prev">
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<title>svg5</title>
+									<polygon points="15.646 20.354 7.293 12 15.646 3.646 16.354 4.354 8.707 12 16.354 19.646 15.646 20.354"/>
+								</svg>
+								<span>이전</span>
+							</a>
+							<a href="" class="pager next">
+								<span>다음</span>
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<title>svg5</title>
+									<polygon points="8.354 20.354 7.646 19.646 15.293 12 7.646 4.354 8.354 3.646 16.707 12 8.354 20.354"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="section-content">
+						<div class="left">
+							<div class="pagination dot">
+								<ul class="pagination-list">
+									<li class="active"><a href=""> 1 </a></li>
+									<li><a href=""> 2 </a></li>
+									<li><a href=""> 3 </a></li>
+									<li><a href=""> 4 </a></li>
+									<li><a href=""> 5 </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="section-content">
+						<div class="carousel thumb">
+							<a href="#" class="prev">
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<title>svg5</title>
+									<polygon points="15.646 20.354 7.293 12 15.646 3.646 16.354 4.354 8.707 12 16.354 19.646 15.646 20.354"/>
+								</svg>
+							</a>
+							<ul>
+								<li>
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M24,21.5H0V2.5H24Zm-23-1H23V3.5H1Z"/>
+										<polyline points="21.001 17.748 15.082 7.748 11.345 14.132 9.001 11.082 5.001 17.748"/>
+										<circle cx="6.0013" cy="8.0041" r="2"/>
+									</svg>
+								</li>
+								<li>
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M24,21.5H0V2.5H24Zm-23-1H23V3.5H1Z"/>
+										<polyline points="21.001 17.748 15.082 7.748 11.345 14.132 9.001 11.082 5.001 17.748"/>
+										<circle cx="6.0013" cy="8.0041" r="2"/>
+									</svg>
+								</li>
+								<li>
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M24,21.5H0V2.5H24Zm-23-1H23V3.5H1Z"/>
+										<polyline points="21.001 17.748 15.082 7.748 11.345 14.132 9.001 11.082 5.001 17.748"/>
+										<circle cx="6.0013" cy="8.0041" r="2"/>
+									</svg>
+								</li>
+								<li>
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M24,21.5H0V2.5H24Zm-23-1H23V3.5H1Z"/>
+										<polyline points="21.001 17.748 15.082 7.748 11.345 14.132 9.001 11.082 5.001 17.748"/>
+										<circle cx="6.0013" cy="8.0041" r="2"/>
+									</svg>
+								</li>
+								<li>
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M24,21.5H0V2.5H24Zm-23-1H23V3.5H1Z"/>
+										<polyline points="21.001 17.748 15.082 7.748 11.345 14.132 9.001 11.082 5.001 17.748"/>
+										<circle cx="6.0013" cy="8.0041" r="2"/>
+									</svg>
+								</li>
+								<li>
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M24,21.5H0V2.5H24Zm-23-1H23V3.5H1Z"/>
+										<polyline points="21.001 17.748 15.082 7.748 11.345 14.132 9.001 11.082 5.001 17.748"/>
+										<circle cx="6.0013" cy="8.0041" r="2"/>
+									</svg>
+								</li>
+								<li>
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M24,21.5H0V2.5H24Zm-23-1H23V3.5H1Z"/>
+										<polyline points="21.001 17.748 15.082 7.748 11.345 14.132 9.001 11.082 5.001 17.748"/>
+										<circle cx="6.0013" cy="8.0041" r="2"/>
+									</svg>
+								</li>
+							</ul>
+							<a href="#" class="next">
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<title>svg5</title>
+									<polygon points="8.354 20.354 7.646 19.646 15.293 12 7.646 4.354 8.354 3.646 16.707 12 8.354 20.354"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="section">
+				<h3 class="section-title">토글 버튼</h3>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<div class="toggleSlideWrapper">
+							<input type="checkbox" class="toggleSlide" />
+						</div>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<div class="toggleSlideWrapper small">
+							<input type="checkbox" class="toggleSlide" />
+						</div>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<div class="toggleIcon">
+							<input type="checkbox" />
+							<a href="">
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<title>svg5</title>
+									<g>
+										<path class="space" d="M17.1667,2A5.8348,5.8348,0,0,0,12,5.1077,5.8393,5.8393,0,0,0,1,7.7909c0,3.1982,1.9969,6.1209,4.5833,8.5208L12,22l6.4167-5.6883C21.3085,13.7075,23,10.9891,23,7.7909A5.8122,5.8122,0,0,0,17.1667,2Z"/>
+										<path class="line" d="M12,22.668,5.251,16.6855C2.0957,13.7573.5,10.7671.5,7.791A6.34,6.34,0,0,1,12,4.1558,6.34,6.34,0,0,1,23.5,7.791c0,3.1494-1.5088,5.9746-4.748,8.8921ZM6.833,2.5A5.3183,5.3183,0,0,0,1.5,7.791c0,2.687,1.4883,5.43,4.4229,8.1538L12,21.332l6.085-5.3945C21.0967,13.2261,22.5,10.6362,22.5,7.791a5.3392,5.3392,0,0,0-10.0576-2.45L12,6.1782l-.4424-.8374A5.3254,5.3254,0,0,0,6.833,2.5Z"/>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="section-content">
+						<div class="toggleIcon round">
+							<input type="checkbox" />
+							<a href="">
+								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+									<title>svg5</title>
+									<g>
+										<polygon class="space" points="11.556 19.917 5.223 14.629 1.001 14.629 1.001 9.351 5.223 9.351 11.556 4.083 11.556 19.917"/>
+										<path class="line" d="M12.0562,20.9854,5.0415,15.1289H.5V8.8511H5.042l7.0142-5.834ZM1.5,14.1289H5.4038l5.6523,4.7188V5.15L5.4033,9.8511H1.5Z"/>
+									</g>
+									<polygon class="line" points="21.013 9.209 20.306 8.502 17.515 11.293 14.725 8.502 14.018 9.209 16.808 12 14.018 14.791 14.725 15.498 17.515 12.707 20.306 15.498 21.013 14.791 18.223 12 21.013 9.209"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<ul class="toggleList">
+							<li>
+								<input type="radio" name="radio0" checked="checked"/>
+								<a href="">항목1</a>
+							</li>
+							<li>
+								<input type="radio" name="radio0"/>
+								<a href="">항목2</a>
+							</li>
+							<li>
+								<input type="radio" name="radio0"/>
+								<a href="">항목3</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<ul class="toggleList icon">
+							<li>
+								<input type="radio" name="radio1" checked="checked"/>
+								<a href="">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M17.2784,2.0385V5.3014c-.6663,0-1.31-.024-1.9511.0052-1.2106.0551-1.5823.3922-1.6619,1.5764-.0518.77-.01,1.5462-.01,2.3956H17.178l-.4541,3.597H13.6613V22H9.9862V12.9145H6.9319V9.2925H9.9983c0-1.1151-.05-2.166.01-3.2106a4.0529,4.0529,0,0,1,3.5842-4.0212C14.7813,1.9386,15.9927,2.0385,17.2784,2.0385Z"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="radio1"/>
+								<a href="">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M17.2784,2.0385V5.3014c-.6663,0-1.31-.024-1.9511.0052-1.2106.0551-1.5823.3922-1.6619,1.5764-.0518.77-.01,1.5462-.01,2.3956H17.178l-.4541,3.597H13.6613V22H9.9862V12.9145H6.9319V9.2925H9.9983c0-1.1151-.05-2.166.01-3.2106a4.0529,4.0529,0,0,1,3.5842-4.0212C14.7813,1.9386,15.9927,2.0385,17.2784,2.0385Z"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="radio1"/>
+								<a href="">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<path d="M17.2784,2.0385V5.3014c-.6663,0-1.31-.024-1.9511.0052-1.2106.0551-1.5823.3922-1.6619,1.5764-.0518.77-.01,1.5462-.01,2.3956H17.178l-.4541,3.597H13.6613V22H9.9862V12.9145H6.9319V9.2925H9.9983c0-1.1151-.05-2.166.01-3.2106a4.0529,4.0529,0,0,1,3.5842-4.0212C14.7813,1.9386,15.9927,2.0385,17.2784,2.0385Z"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<ul class="toggleList round">
+							<li>
+								<input type="radio" name="radio2" checked="checked"/>
+								<a href="">XL</a>
+							</li>
+							<li>
+								<input type="radio" name="radio2"/>
+								<a href="">L</a>
+							</li>
+							<li>
+								<input type="radio" name="radio2"/>
+								<a href="">M</a>
+							</li>
+							<li>
+								<input type="radio" name="radio2"/>
+								<a href="">S</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<ul class="toggleStar">
+							<li>
+								<a href="">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<polygon points="12 2.489 14.361 9.755 22 9.755 15.82 14.245 18.18 21.511 12 17.02 5.82 21.511 8.18 14.245 2 9.755 9.639 9.755 12 2.489"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<polygon points="12 2.489 14.361 9.755 22 9.755 15.82 14.245 18.18 21.511 12 17.02 5.82 21.511 8.18 14.245 2 9.755 9.639 9.755 12 2.489"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<polygon points="12 2.489 14.361 9.755 22 9.755 15.82 14.245 18.18 21.511 12 17.02 5.82 21.511 8.18 14.245 2 9.755 9.639 9.755 12 2.489"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<polygon points="12 2.489 14.361 9.755 22 9.755 15.82 14.245 18.18 21.511 12 17.02 5.82 21.511 8.18 14.245 2 9.755 9.639 9.755 12 2.489"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24">
+										<title>svg5</title>
+										<polygon points="12 2.489 14.361 9.755 22 9.755 15.82 14.245 18.18 21.511 12 17.02 5.82 21.511 8.18 14.245 2 9.755 9.639 9.755 12 2.489"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<ul class="toggleTab">
+							<li class="active"><a href="">탭 1</a></li>
+							<li><a href="">탭 2</a></li>
+							<li><a href="">탭 3</a></li>
+							<li><a href="">탭 4</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<ul class="stepMenu">
+							<li><span>01 단계</span></li>
+							<li class="active"><span>02 단계</span></li>
+							<li><span>03 단계</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-contents">
+					<div class="section-content">
+						<ul class="stepMenu arrow">
+							<li><span>01 단계</span></li>
+							<li class="active"><span>02 단계</span></li>
+							<li><span>03 단계</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+
+		</div><!-- .contents -->
+
+	</div><!-- .wrapper -->
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<!-- 캘린더 플러그인은 글로벌 변수로 선언되야 해서 파일 따로 분리했다 -->
+	<script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>XELF</title>
+
+        <link rel="stylesheet" href="css/elements.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/tinyscrollbar.css">
+    </head>
+
+
+    <body>
+
+
+        <div class="wrapper">
+
+
+            <!-- 헤더 -->
+            <header class="siteHeader">
+                <div class="siteHeader-menu">
+                    <a href="#" class="menu">메뉴</a>
+                    <img src="images/logo.png" alt="XELF" class="logo"/>
+                </div>
+
+                <div class="siteHeader-btns">
+                    <div class="siteHeader-pageController">
+                        <div class="pageSelector">
+                            <select name="" id="">
+                                <option value="page1">page1</option>
+                                <option value="page2">page2</option>
+                                <option value="page3">page3</option>
+                            </select>
+                            <a href="#" class="buttonUtil new">New</a>
+                        </div>
+                        <ul class="history">
+                            <li class="item01"><a href="#" class="buttonUtil">실행 취소</a></li>
+                            <li class="item02"><a href="#" class="buttonUtil">다시 실행</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="siteHeader-alignment">
+                        <li class="item01"><a href="#" class="buttonUtil">위쪽 정렬</a></li>
+                        <li class="item02"><a href="#" class="buttonUtil">가운데 정렬</a></li>
+                        <li class="item03"><a href="#" class="buttonUtil">아래 정렬</a></li>
+                        <li class="item04"><a href="#" class="buttonUtil">왼쪽 정렬</a></li>
+                        <li class="item05"><a href="#" class="buttonUtil">가운데 정렬</a></li>
+                        <li class="item06"><a href="#" class="buttonUtil">오른쪽 정렬</a></li>
+                        <li class="item07"><a href="#" class="buttonUtil">겹침 지우기</a></li>
+                        <li class="item08"><a href="#" class="buttonUtil">겹침 빼고 지우기</a></li>
+                        <li class="item09"><a href="#" class="buttonUtil">맨위로</a></li>
+                        <li class="item10"><a href="#" class="buttonUtil">맨 아래로</a></li>
+                    </ul>
+
+                    <div class="siteHeader-zoom">
+                        <div class="stepInput">
+                            <a href="#" class="plus">+</a>
+                            <div class="input">
+                                <input type="text" value="100%"/>
+                            </div>
+                            <a href="#" class="minus">-</a>
+                        </div>
+                        <a href="#" class="zoom">돋보기</a>
+                    </div>
+
+                    <a href="#" class="help">도움말</a>
+                </div>
+            </header>
+
+
+            <!-- 왼쪽 메뉴 -->
+            <div id="leftMenu" class="sideMenu">
+
+                <div class="sideMenu-unit">
+                    <h2 class="sideMenu-title"><a href="#">Elements List</a></h2>
+
+                    <div class="sideMenu-inner narrow customScrollbar">
+
+                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+
+                        <div class="viewport">
+                            <div class="overview">
+                                <div class="selectBlock">
+                                    <select>
+                                        <option value="Basic Elements">Basic Elements</option>
+                                        <option value="Market">Market</option>
+                                        <option value="Dashborad">Dashborad</option>
+                                    </select>
+                                </div>
+
+                                <input type="text" class="inputText search" placeholder="Element Search..."/>
+
+                                <ul class="grid elList basicEl">
+                                    <li class="grid-unit item01"><a href="#"><span>Box</span></a></li>
+                                    <li class="grid-unit item02"><a href="#"><span>Line</span></a></li>
+                                    <li class="grid-unit item03"><a href="#"><span>Text</span></a></li>
+                                    <li class="grid-unit item04"><a href="#"><span>Text Field</span></a></li>
+                                    <li class="grid-unit item05"><a href="#"><span>Select Box</span></a></li>
+                                    <li class="grid-unit item06"><a href="#"><span>Radio Button</span></a></li>
+                                    <li class="grid-unit item07"><a href="#"><span>Check Box</span></a></li>
+                                    <li class="grid-unit item08"><a href="#"><span>Button</span></a></li>
+                                    <li class="grid-unit item09"><a href="#"><span>Image</span></a></li>
+                                    <li class="grid-unit item10"><a href="#"><span>List</span></a></li>
+                                    <li class="grid-unit item11"><a href="#"><span>Table</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sideMenu-unit">
+                    <h2 class="sideMenu-title"><a href="#">Layer</a></h2>
+
+                    <div class="sideMenu-inner customScrollbar">
+                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+
+                        <div class="viewport">
+                            <div class="overview">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 오른쪽 메뉴 -->
+            <div id="rightMenu" class="sideMenu">
+                <div class="sideMenu-title boxId">
+                    # <input type="text" value="box_202913_1029"/>
+                </div>
+
+                <div class="sideMenu-unit">
+                    <h2 class="sideMenu-title"><a href="#">Property</a></h2>
+
+                    <div class="sideMenu-inner customScrollbar">
+                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+
+                        <div class="viewport">
+                            <div class="overview">
+                                <div class="formGroup">
+                                    <div class="formGroup-unit position">
+                                        <h3 class="title">Position</h3>
+                                        <div class="inputUnit m10">
+                                            <div class="inputUnit-item item01"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item02"><input type="text" value="9999" class="inputText number"/> px</div>
+                                        </div>
+                                        <div class="checkboxGroup">
+                                            <div class="checkboxGroup-unit">
+                                                <input type="checkbox" id="positonFixed" class="checkbox"/>
+                                                <span class="checkboxBtn"></span>
+                                                <label for="positonFixed" class="checkboxLabel">Fix Position</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="formGroup-unit size">
+                                        <h3 class="title">Size</h3>
+                                        <div class="inputUnit">
+                                            <div class="inputUnit-item item01"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <a href="#" class="button active">비율 유지</a>
+                                            <div class="inputUnit-item item02"><input type="text" value="9999" class="inputText number"/> px</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="formGroup-unit padding">
+                                        <h3 class="title">Padding</h3>
+                                        <div class="inputUnit box">
+                                            <div class="inputUnit-item item01"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item02"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item03"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item04"><input type="text" value="9999" class="inputText number"/> px</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sideMenu-unit">
+                    <h2 class="sideMenu-title"><a href="#">Typography</a></h2>
+
+                    <div class="sideMenu-inner customScrollbar">
+                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+
+                        <div class="viewport">
+                            <div class="overview">
+                                <div class="formGroup">
+                                    <div class="formGroup-unit character">
+                                        <h3 class="title">Character</h3>
+                                        <div class="selectGroup">
+                                            <select name="">
+                                                <option value="noto sans">Noto Sans Sanserif Korean Myongjo</option>
+                                                <option value="noto sans kr">Noto Sans CJK KR</option>
+                                                <option value="arial">Arial</option>
+                                            </select>
+                                            <select name="">
+                                                <option value="Normal">Normal</option>
+                                                <option value="Bold">Bold</option>
+                                                <option value="Lighter">Lighter</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="formGroup-unit">
+                                        <h3 class="title">Size</h3>
+                                        <div class="combobox">
+                                            <input type="text" class="comboboxEl" value="13px" selectboxoptions="8px;9px;11px;12px;14px;16px;20px;24px;32px;36px;48px;60p;72px"/>
+                                        </div>
+                                    </div>
+                                    <div class="formGroup-unit">
+                                        <h3 class="title">Color</h3>
+                                        <div class="inputColor">
+                                            <span style="background-color: #000000" class="selectedColor"></span>
+                                            <input type="text" class="inputText" value="#000000"/>
+                                        </div>
+                                    </div>
+                                    <div class="formGroup-unit spacing">
+                                        <h3 class="title">Spacing</h3>
+
+                                        <div class="inputUnit col2">
+                                            <div class="inputUnit-item item01">
+                                                <div class="combobox">
+                                                    <input type="text" class="comboboxEl" value="auto" selectboxoptions="8;9;11;12;14;16;20;24;32;36;48;60;72"/>
+                                                </div> px
+                                            </div>
+                                            <div class="inputUnit-item item02">
+                                                <div class="combobox">
+                                                    <input type="text" class="comboboxEl" value="37" selectboxoptions="-10;-5;-2;-1;0;1;2;5;10;15;25;50"/>
+                                                </div> px
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="formGroup-unit typoStyle">
+                                        <h3 class="title">Style</h3>
+                                        <ul class="grid col4 linkGroup">
+                                            <li class="grid-unit item01 active"><a href="#" class="linkGroup-btn">B</a></li>
+                                            <li class="grid-unit item02"><a href="#" class="linkGroup-btn">U</a></li>
+                                            <li class="grid-unit item03"><a href="#" class="linkGroup-btn">I</a></li>
+                                            <li class="grid-unit item04"><a href="#" class="linkGroup-btn">S</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="formGroup-unit typoParagraph">
+                                        <h3 class="title">Paragraph</h3>
+                                        <ul class="grid col4 linkGroup">
+                                            <li class="grid-unit item01 active"><a href="#" class="linkGroup-btn">왼쪽</a></li>
+                                            <li class="grid-unit item02"><a href="#" class="linkGroup-btn">가운데</a></li>
+                                            <li class="grid-unit item03"><a href="#" class="linkGroup-btn">오른쪽</a></li>
+                                            <li class="grid-unit item04"><a href="#" class="linkGroup-btn">맞춤</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="sideMenu-unit">
+                    <h2 class="sideMenu-title"><a href="#">Style</a></h2>
+
+                    <div class="sideMenu-inner customScrollbar">
+
+                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+
+
+                        <div class="viewport">
+                            <div class="overview">
+
+                                <div class="formGroup">
+                                    <div class="formGroup-unit">
+                                        <h3 class="title">Background Color</h3>
+                                        <div class="inputColor">
+                                            <span style="background-color: #000000" class="selectedColor"></span>
+                                            <input type="text" class="inputText" value="#000000"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="formGroup-unit">
+                                        <h3 class="title">Background Image</h3>
+
+                                        <div class="fileUpload block">
+                                            <input type="file" id="fileUpload-upload">
+                                            <input type="text" value="" id="fileUpload-fileName" class="inputText" disabled="disabled"/>
+                                            <button id="fileUpload-browse" type="button" class="button black big">Upload Image</button>
+                                            <a href="#" class="right textWhite">remove</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="formGroup-unit styleBgPosition">
+                                        <h3 class="title">Background Position</h3>
+                                        <div class="selectGroup">
+                                            <select name="">
+                                                <option value="Center">Center</option>
+                                                <option value="Top">Top</option>
+                                                <option value="Bottom">Bottom</option>
+                                            </select>
+                                            <select name="">
+                                                <option value="Center">Center</option>
+                                                <option value="Left">Left</option>
+                                                <option value="Right">Right</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="formGroup-unit styleBgRepeat">
+                                        <h3 class="title">Background Repeat</h3>
+                                        <div class="selectSingle">
+                                            <select name="">
+                                                <option value="Repeat">Repeat</option>
+                                                <option value="No Repeat">No Repeat</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="formGroup-unit border">
+                                        <h3 class="title">Border</h3>
+                                        <div class="inputUnit box">
+                                            <div class="inputUnit-item item01"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item02"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item03"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item04"><input type="text" value="9999" class="inputText number"/> px</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="formGroup-unit styleBorderColor">
+                                        <div class="inputColor">
+                                            <span style="background-color: #000000" class="selectedColor"></span>
+                                            <input type="text" class="inputText" value="#000000"/>
+                                        </div>
+                                        <div class="selectBlock" id="selectBorderStyle">
+                                            <select name="">
+                                                <option value="solid">Solid</option>
+                                                <option value="dashed">Dashed</option>
+                                                <option value="dotted">Dotted</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="formGroup-unit styleRadius">
+                                        <h3 class="title">Corner Radius</h3>
+                                        <div class="inputUnit box corner">
+                                            <div class="inputUnit-item item01"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item02"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item03"><input type="text" value="9999" class="inputText number"/> px</div>
+                                            <div class="inputUnit-item item04"><input type="text" value="9999" class="inputText number"/> px</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sideMenu-unit">
+                    <h2 class="sideMenu-title"><a href="#">Interaction</a></h2>
+
+                    <div class="sideMenu-inner customScrollbar">
+
+                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+
+                        <div class="viewport">
+                            <div class="overview">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sideMenu-unit">
+                    <h2 class="sideMenu-title"><a href="#">Css Editor</a></h2>
+
+                    <div class="sideMenu-inner customScrollbar">
+
+                        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+
+                        <div class="viewport">
+                            <div class="overview">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><!-- .sideMenu -->
+
+
+
+            <!-- 본문 -->
+            <div class="contents">
+                <div class="contents-top">
+                    <ul class="pageList">
+                        <li class="active"><a href="#">Default (1280x960px)</a></li>
+                        <li><a href="#">Default (970x960px)</a></li>
+                    </ul>
+                    <a href="#" class="button white add">Add Device Size</a>
+                </div>
+
+                <div class="contents-canvas">
+                    <!-- 사용자가 추가한 요소 -->
+                </div>
+            </div><!-- .contents -->
+
+
+        </div><!-- .wrapper -->
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
+        <script type="text/javascript" src="js/ui.js"></script>
+    </body>
+
+</html>

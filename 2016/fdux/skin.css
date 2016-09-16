@@ -1,0 +1,1789 @@
+
+/*--------------------------------------------------------*/
+/* 요소 */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* Skin Black */
+/*--------------------------------------------------------*/
+
+/* 버튼 */
+.skinBlack .button {
+    min-width: 120px;
+    height: 44px;
+    padding: 0 24px;
+    line-height: 44px;
+    background: #1a1a1a;
+    color: #fff;
+}
+.skinBlack .button.white {
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #1a1a1a;
+}
+.skinBlack .button.big {
+    min-width: 140px;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+.skinBlack .button.small {
+    min-width: 80px;
+    font-size: 12px;
+    height: 38px;
+    line-height: 38px;
+}
+.skinBlack .button.hasIcon svg {
+    width: 18px;
+    fill: #fff;
+    margin-top: -4px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.skinBlack .button.hasIcon.white svg {
+    fill: #000;
+}
+
+/* 버튼 복합형 */
+.skinBlack .iconList svg {
+    height: 1.2em;
+    vertical-align: text-bottom;
+}
+.skinBlack .iconList {
+    margin-left: 10px;
+}
+.skinBlack .iconList:first-child {
+    margin-left: 0;
+}
+
+
+/* 아이콘 */
+.skinBlack .icon {
+    line-height: 1em;
+    position: relative;
+}
+.skinBlack .icon svg .space {
+    fill: none;
+}
+.skinBlack .icon svg .line {
+    fill: #000;
+}
+.skinBlack .icon .onePath {
+    fill: none;
+    stroke: #000;
+}
+.skinBlack .icon.hasBadge {
+    position: relative;
+    margin-right: 10px;
+}
+.skinBlack .icon.round svg {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    margin: 0 auto;
+    fill: #fff;
+    border-radius: 50%;
+    background: #000;
+}
+.skinBlack .icon.border {
+    border: 1px solid #c1c1c1;
+    padding: 8px;
+}
+.skinBlack .icon.border svg {
+    fill: #000;
+}
+.skinBlack .icon.border:hover {
+    background: #e9e9e9;
+}
+
+
+
+
+/* 셀렉트 박스 */
+.skinBlack .select {
+    position: relative;
+    display: inline-block;
+
+    width: 140px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+
+    background: #000000;
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid #000;
+
+    min-width: 1px;
+    min-height: 1px;
+}
+.skinBlack .select.white {
+    background: #fff;
+    color: #333;
+}
+.skinBlack .select select,
+.skinBlack .select .select-opt {
+    display: none;
+}
+.skinBlack .select .select-val {
+    height: 100%;
+    padding: 0px 36px 0 10px;
+
+    line-height: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.skinBlack .select .select-val.active {
+    background: #666;
+}
+.skinBlack .select.white .select-val.active {
+    background: #333;
+    color: #fff;
+}
+.skinBlack .select .select-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 36px;
+    height: 100%;
+    border-left: 1px solid #333333;
+
+    text-align: center;
+}
+.skinBlack .select.white .select-btn {
+    border-left-color: #000;
+}
+.skinBlack .select .select-btn svg {
+    width: 50%;
+    fill: #fff;
+}
+.skinBlack .select.white .select-btn svg {
+    fill: #333;
+}
+
+
+.skinBlack .select .select-opt {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    background: #000;
+    border: solid 1px #000;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+.skinBlack .select.white .select-opt {
+    background: #ffffff;
+    color: #333;
+}
+.skinBlack .select .select-opt li {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.skinBlack .select .select-opt li:last-child {
+    border: none;
+}
+.skinBlack .select .select-opt li:hover {
+    background: #222;
+    color: #fff;
+}
+.skinBlack .select .select-val.active {
+    background: #000;
+    color: #fff;
+}
+.skinBlack .select.simple {
+    background: #fff;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.skinBlack .select.simple .select-btn {
+    border-left: none;
+}
+.skinBlack .select.simple .select-btn svg {
+    fill: #000;
+}
+.skinBlack .select.simple .select-opt li {
+    background: #fff;
+    color: #333;
+}
+.skinBlack .select.simple .select-opt li:hover {
+    background: #000;
+    color: #fff;
+}
+.skinBlack .select.simple .select-val.active {
+    background: #efefef;
+    color: #333;
+}
+.skinBlack .select.simple.border {
+    border: 1px solid #c1c1c1;
+}
+
+
+
+/* 페이지네이션 */
+.skinBlack .pagination {
+    text-align: center;
+}
+.skinBlack .pagination-list:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .pagination-list li a,
+.skinBlack .pagination .prev,
+.skinBlack .pagination .next {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    vertical-align: middle;
+}
+.skinBlack .pagination-list {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+}
+.skinBlack .pagination-list li {
+    float: left;
+}
+.skinBlack .pagination-list li.active a {
+    background: #000000;
+    color: #fff;
+}
+.skinBlack .pagination-list li a {
+    display: block;
+    width: 30px;
+    border-left: none;
+}
+.skinBlack .pagination a:hover {
+    background: #e9e9e9;
+    text-decoration: none;
+}
+.skinBlack .pagination-list li.active a:hover {
+    background: #000;
+}
+.skinBlack .pagination-list li:first-child a {
+    border-left: 1px solid #000;
+}
+.skinBlack .pagination .prev,
+.skinBlack .pagination .next {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 1em;
+}
+.skinBlack .pagination .prev svg,
+.skinBlack .pagination .next svg {
+    width: 16px;
+    height: 100%;
+    vertical-align: middle;
+}
+.skinBlack .pagination .prev span,
+.skinBlack .pagination .next span {
+    vertical-align: middle;
+}
+.skinBlack .pagination .prev {
+    margin-right: 20px;
+    padding-left: 4px;
+}
+.skinBlack .pagination .next {
+    margin-left: 20px;
+    padding-right: 4px;
+}
+.skinBlack .pagination.number a {
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.skinBlack .pagination.number li:first-child a {
+    margin-left: 0;
+}
+.skinBlack .pagination.text li {
+    margin-left: 10px;
+}
+.skinBlack .pagination.text li:first-child {
+    margin-left: 0;
+}
+.skinBlack .pagination.text li a {
+    width: auto;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.skinBlack .pagination.text li.active a {
+    background: #000000;
+    color: #fff;
+}
+.skinBlack .pagination.dot li {
+    margin-left: 10px;
+}
+.skinBlack .pagination.dot li:first-child {
+    margin-left: 0;
+}
+.skinBlack .pagination.dot li a {
+    text-indent: -9999px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: #000;
+}
+.skinBlack .pagination.dot li.active a {
+    background: #fff;
+}
+
+
+/* 페이저 */
+.skinBlack .pager {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 16px;
+}
+.skinBlack .pager:hover {
+    text-decoration: none;
+}
+.skinBlack .pager:hover span {
+    text-decoration: underline;
+}
+.skinBlack .pager svg,
+.skinBlack .pager span {
+    vertical-align: middle;
+}
+.skinBlack .pager svg {
+    height: 30px;
+    width: 30px;
+}
+.skinBlack .pager.next {
+    padding-left: 12px;
+}
+.skinBlack .pager.prev {
+    padding-right: 12px;
+}
+.skinBlack .pager.border {
+    border: 1px solid #000;
+    font-size: 1em;
+}
+.skinBlack .pager.border svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* 토글 버튼 */
+.skinBlack .toggleSlideWrapper.small .lcs_wrap {
+    height: 30px;
+}
+.skinBlack .toggleSlideWrapper.small .lcs_switch {
+    width: 74px;
+}
+.skinBlack .toggleSlideWrapper.small .lcs_cursor {
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+}
+.skinBlack .toggleSlideWrapper.small .lcs_label {
+    font-size: 1em;
+}
+.skinBlack .toggleSlideWrapper.small .lcs_switch.lcs_off .lcs_cursor {
+    left: 3px;
+}
+.skinBlack .toggleSlideWrapper.small .lcs_switch.lcs_on .lcs_cursor {
+    right: 3px;
+}
+
+
+/* 토글 버튼 아이콘 */
+.skinBlack .toggleIcon {
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+}
+.skinBlack .toggleIcon a,
+.skinBlack .toggleIcon svg {
+    display: block;
+}
+.skinBlack .toggleIcon input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: -1;
+}
+.skinBlack .toggleIcon svg .space {
+    fill: #fff;
+}
+.skinBlack .toggleIcon svg .line {
+    fill: #000;
+}
+.skinBlack .toggleIcon.active svg .space {
+    fill: #000;
+}
+.skinBlack .toggleIcon.round {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 4px;
+}
+.skinBlack .toggleIcon.round.active {
+    background: #000;
+}
+.skinBlack .toggleIcon.round.active svg .line {
+    fill: #fff;
+}
+
+
+/* 토글 리스트, 토글 목록 */
+.skinBlack .toggleList:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .toggleList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.skinBlack .toggleList input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.skinBlack .toggleList li {
+    float: left;
+    border: 1px solid #000;
+    border-left: none;
+}
+.skinBlack .toggleList li:first-child {
+    border-left: 1px solid #000;
+}
+.skinBlack .toggleList li a {
+    display: block;
+    padding: 8px 14px;
+}
+.skinBlack .toggleList li a:hover {
+    background: #e9e9e9;
+    text-decoration: none;
+}
+.skinBlack .toggleList li.active a {
+    background: #000;
+    color: #fff;
+}
+.skinBlack .toggleList.icon li a {
+    padding: 4px;
+}
+.skinBlack .toggleList.icon svg {
+    width: 20px;
+    height: 20px;
+}
+.skinBlack .toggleList.icon .active svg {
+    fill: #fff;
+}
+.skinBlack .toggleList.round li {
+    border: none;
+    margin-left: 10px;
+}
+.skinBlack .toggleList.round li:first-child {
+    margin-left: 0;
+}
+.skinBlack .toggleList.round li a {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* 토글 별점 */
+.skinBlack .toggleStar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.skinBlack .toggleStar li {
+    display: inline-block;
+}
+.skinBlack .toggleStar li a {
+    display: block;
+}
+.skinBlack .toggleStar li a svg {
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 1px;
+}
+.skinBlack .toggleStar li.active svg {
+    fill: #000;
+}
+
+
+/* 토글 탭 */
+.toggleTab:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.toggleTab {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.toggleTab li {
+    float: left;
+}
+.toggleTab li a {
+    display: block;
+    padding: 8px 24px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+.toggleTab li a:hover {
+    text-decoration: none;
+    background: #333333;
+}
+.toggleTab li.active a {
+    background: #ffffff;
+    color: #000;
+}
+.toggleTab:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #000;
+    z-index: -1;
+}
+
+
+
+/* 카루셀 */
+.skinBlack .carousel.thumb li {
+    width: 100px;
+}
+
+
+/* 이미지 */
+.skinBlack .emptyImg {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    background: #efefef;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.skinBlack .emptyImg svg {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -25px;
+    fill: #999999;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+/* 텍스트 */
+.skinBlack .h1 {
+    font-size: 42px;
+    line-height: 42px;
+}
+.skinBlack .h2 {
+    font-size: 31px;
+    line-height: 31px;
+}
+.skinBlack .h3 {
+    font-size: 26px;
+    line-height: 26px;
+}
+.skinBlack .h4 {
+    font-size: 21px;
+    line-height: 12px;
+}
+.skinBlack .h5 {
+    font-size: 16px;
+    line-height: 16px;
+}
+.skinBlack .paragraph {
+    font-size: 14px;
+    line-height: 14px;
+}
+.skinBlack .paragraph.small {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+
+/* 테이블 */
+.skinBlack .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #000;
+    table-layout: fixed;
+}
+.skinBlack .table caption {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+.skinBlack .table th,
+.skinBlack .table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #c1c1c1;
+    vertical-align: middle;
+}
+.skinBlack .table th {
+    font-size: 15px;
+}
+.skinBlack .table th.title {
+    width: 48%;
+}
+.skinBlack .table th.num {
+    width: 7%;
+}
+.skinBlack .table td.title {
+    text-align: left;
+}
+.skinBlack .table td.title a {
+    display: block;
+    color: #333;
+}
+.skinBlack .table a,
+.skinBlack .table a svg {
+    color: #0050ff;
+    fill: #0050ff;
+}
+.skinBlack .table a svg {
+    width: 20px;
+    line-height: 1em;
+}
+.skinBlack .table .textLink {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #0050ff;
+}
+.skinBlack .table .textLink:hover {
+    text-decoration: none;
+}
+.skinBlack .table .buttonLink {
+    display: inline-block;
+}
+
+/* 데이타 테이블 */
+.skinBlack .dataTable-header {
+    margin-bottom: 20px;
+}
+.skinBlack .table.data th.hasCheckbox {
+    width: 20px;
+}
+.skinBlack .table.data a {
+    display: block;
+    color: #333;
+}
+.skinBlack .table.data a:hover {
+    text-decoration: none;
+}
+.skinBlack .table.data tbody tr:nth-child(odd) {
+    background: #f6f6f6;
+}
+.skinBlack .table.data td:hover {
+    background: #d2d2d2;
+}
+.skinBlack .table.data tbody tr:hover {
+    background: #dddddd;
+}
+
+
+/* 스텝 텝메뉴 */
+.skinBlack .stepMenu {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+.skinBlack .stepMenu li {
+    display: table-cell;
+    vertical-align: middle;
+}
+.skinBlack .stepMenu li span {
+    position: relative;
+    display: block;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.skinBlack .stepMenu li span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #000;
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    z-index: -1;
+}
+.skinBlack .stepMenu li:first-child span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -31px;
+    top: -1px;
+    bottom: -1px;
+    border-right: 30px solid #fff;
+    border-top: 50px solid transparent;
+}
+.skinBlack .stepMenu li:last-child span:after {
+    border-right: none;
+}
+.skinBlack .stepMenu li:last-child span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 30px solid #fff;
+    border-top: 50px solid transparent;
+}
+.skinBlack .stepMenu li:last-child.active span:before {
+    border-right-color: #000;
+}
+.skinBlack .stepMenu li.active span {
+    color: #fff;
+}
+.skinBlack .stepMenu li.active span:after {
+    background: #000;
+}
+
+
+/* 도형 */
+.skinBlack .shape {
+    display: inline-block;
+}
+.skinBlack .shape {
+    stroke: #000;
+    stroke-width: 1px;
+    fill: #fff
+}
+
+
+/* 폼 */
+.skinBlack .inputText {
+    width: 140px;
+    height: 40px;
+    margin: 0;
+    padding: 0 0 0 10px;
+
+    border: 0;
+    border-bottom: 1px solid #222;
+    border-radius: 0;
+
+    font-weight: normal;
+
+    min-width: 1px;
+    min-height: 1px;
+    font-size: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.skinBlack .inputText:focus {
+    background: #f2f2f2;
+    outline: none;
+}
+.skinBlack .inputText[readonly="readonly"] {
+    background: #fafafa;
+    border-bottom-color: #fafafa;
+    color: #888888;
+}
+.skinBlack .inputText.border {
+    border: 1px solid #c1c1c1;
+}
+.skinBlack .inputText.border:focus {
+    border-color: #000;
+    background: none;
+}
+.skinBlack .inputText.border[readonly="readonly"] {
+    border: none;
+}
+.skinBlack .inputText.border[readonly="readonly"]:focus {
+    background: #fafafa;
+}
+.skinBlack .inputUnit.hasIcon {
+    border-bottom: 1px solid #000;
+}
+.skinBlack .inputUnit.hasIcon svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.skinBlack .inputUnit.hasIcon .inputText {
+    padding-left: 0;
+    border-bottom: none;
+}
+.skinBlack .inputUnit.hasIcon .inputText:focus {
+    background: none;
+}
+.skinBlack .inputUnit.hasIcon.border {
+    padding-left: 10px;
+    border: 1px solid #c1c1c1;
+}
+.skinBlack .searchBox {
+    position: relative;
+}
+.skinBlack .searchBox:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .searchBox .inputText {
+    float: left;
+}
+.skinBlack .searchBox .icon {
+    position: relative;
+    float: left;
+    height: 40px;
+    width: 40px;
+    background: #000;
+    text-align: center;
+}
+.skinBlack .searchBox .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    fill: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.skinBlack .searchBox .icon a {
+    display: block;
+    height: 100%;
+}
+.skinBlack .searchBox.border {
+    border: 1px solid #000;
+}
+.skinBlack .searchBox.border .inputText {
+    border: none;
+}
+.skinBlack .searchBox.border .icon {
+    background: none;
+}
+.skinBlack .searchBox.border .icon svg {
+    fill: #000;
+}
+.skinBlack .textarea {
+    width: 300px;
+    height: 140px;
+    border: none;
+    border-bottom: 1px solid #000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.skinBlack .textarea.border {
+    border: 1px solid #c1c1c1;
+}
+
+
+/* 스테퍼 */
+.skinBlack .spinner {
+    border-bottom: 1px solid #000;
+}
+.skinBlack .spinner .inputText {
+    width: 90px;
+    display: inline-block;
+    float: none;
+    border-bottom: none;
+    vertical-align: middle;
+}
+.skinBlack .spinner .input-group-btn-vertical {
+    display: inline-block;
+    float: none;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+}
+.skinBlack .spinner .input-group-btn-vertical a {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    line-height: 1em;
+}
+.skinBlack .spinner .input-group-btn-vertical a svg {
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    line-height: 1em;
+}
+.skinBlack .spinner.inputCenter {
+    display: table;
+    border: 1px solid #c1c1c1;
+}
+.skinBlack .spinner.inputCenter .inputWrapper,
+.skinBlack .spinner.inputCenter a {
+    display: table-cell;
+    vertical-align: middle;
+}
+.skinBlack .spinner.inputCenter a {
+    position: relative;
+    padding: 10px;
+    float: none;
+}
+.skinBlack .spinner.inputCenter .inputText {
+    width: 70px;
+    padding: 0;
+    text-align: center;
+}
+.skinBlack .spinner.inputCenter a svg {
+    width: 12px;
+    height: 12px;
+    fill: #8a8a8a;
+}
+
+
+/* 체크박스 */
+.skinBlack .checkboxUnit {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.skinBlack .checkboxUnit:first-child {
+    margin-left: 0;
+}
+.skinBlack .checkbox {
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+}
+.skinBlack .checkboxLable {
+    vertical-align: middle;
+}
+.skinBlack .checkboxBtn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+    margin-left: -2px;
+    margin-right: 4px;
+
+    border-radius: 0;
+    border: 1px solid #222;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.skinBlack .checkboxBtn svg {
+    display: none;
+}
+.skinBlack .checkbox:checked + .checkboxBtn {
+    background: #000;
+}
+.skinBlack .checkbox:checked + .checkboxBtn svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    fill: #fff;
+}
+
+
+/* 라디오 버튼 */
+.skinBlack .radioUnit {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.skinBlack .radioUnit:first-child {
+    margin-left: 0;
+}
+.skinBlack .radio {
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+}
+.skinBlack .radioLable {
+    vertical-align: middle;
+}
+.skinBlack .radioBtn {
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    margin-left: -2px;
+    margin-top: 2px;
+    margin-right: 4px;
+
+    border-radius: 50%;
+    border: 1px solid #222;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.skinBlack .radio:checked + .radioBtn {
+    border-width: 4px;
+}
+
+
+/* 캘린더 */
+.skinBlack .datePickerWrapper {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+}
+.skinBlack .datePickerWrapper svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.skinBlack .datePickerWrapper svg .cls-1 {
+    fill: #fff;
+}
+.skinBlack .datePickerWrapper .inputText {
+    border-bottom: none;
+}
+.skinBlack .datePickerWrapper .datepickr-calendar {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+.skinBlack .datePickerWrapper .open .datepickr-calendar {
+    margin-top: 10px;
+}
+.skinBlack .datepickr-calendar .datepickr-months {
+    padding: 10px 0;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    color: #333;
+}
+.skinBlack .datepickr-calendar .datepickr-day {
+    color: #333;
+    background: none;
+    border: none;
+    text-align: center;
+}
+.skinBlack .datepickr-calendar th {
+    font-weight: bold;
+    font-size: 14px;
+}
+.skinBlack .datepickr-calendar .datepickr-current-month {
+    font-size: 16px;
+    font-weight: bold;
+}
+.skinBlack .datepickr-calendar .today .datepickr-day {
+    border: none;
+    background: #1a1a1a;
+    color: #fff;
+}
+.skinBlack .datepickr-calendar .datepickr-day:hover {
+    background: #dddddd;
+}
+.datepickr-calendar .datepickr-prev-month,
+.datepickr-calendar .datepickr-next-month {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border-radius: 0;
+    color: #000;
+    line-height: 24px;
+    text-align: center;
+}
+.datepickr-calendar .datepickr-prev-month:hover,
+.datepickr-calendar .datepickr-next-month:hover {
+    background: #000;
+}
+.datepickr-calendar .datepickr-next-month:hover svg {
+
+}
+
+
+/* 레인지 슬라이더 */
+.emerald.rangeSlider .fsslider > .fssel-value {
+    height: 10px;
+    border-radius: 8px;
+    background-color: #1abc9c;
+}
+.emerald.rangeSlider .fsslider > .fsfull-value {
+    height: 10px;
+    border-radius: 8px;
+}
+.emerald.rangeSlider .fsslider > .fscaret {
+    width: 20px;
+    height: 20px;
+    min-width: 0;
+    padding: 0;
+    top: 5px;
+    border-radius: 50%;
+    background-color: #16a085;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* 파일 업로드 */
+.skinBlack .fileUpload {
+    position: relative;
+}
+.skinBlack .fileUpload .button {
+    height: 40px;
+    line-height: 40px;
+    vertical-align: bottom;
+}
+.skinBlack .fileUpload .inputText {
+    width: 260px;
+    vertical-align: middle;
+    background: #fff;
+}
+.skinBlack .fileUpload svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    fill: #fff;
+    vertical-align: text-bottom;
+    line-height: 1em;
+}
+.skinBlack .fileUpload .remove {
+    display: inline-block;
+    vertical-align: middle;
+}
+.skinBlack .fileUpload .remove svg {
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    fill: #f68586;
+    border: 1px solid #f68586;
+    border-radius: 50%;
+}
+
+
+
+/* 알림 메세지 창 */
+.skinBlack .message {
+    width: 350px;
+    padding: 30px 20px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.skinBlack .message-icon svg {
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+    fill: #fff;
+    border-radius: 50%;
+    background: #000;
+    line-height: 1em;
+}
+.skinBlack .message-title {
+    font-size: 24px;
+}
+.skinBlack .message-text {
+    color: #434343;
+}
+.skinBlack .message .button {
+    margin-top: 24px;
+}
+.skinBlack .toast {
+    padding: 15px 20px;
+    border: 1px solid #000;
+}
+.skinBlack .toast-text {
+    margin: 0;
+}
+.skinBlack .toast-title {
+    font-size: 20px;
+}
+.skinBlack .toast.hasIcon {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.skinBlack .toast.hasIcon .toast-contents,
+.skinBlack .toast-icon {
+    display: table-cell;
+    padding: 15px;
+    vertical-align: top;
+}
+.skinBlack .toast-icon {
+    width: 40px;
+    padding-right: 0;
+}
+.skinBlack .toast-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+/* 툴팁 */
+.skinBlack .tooltip {
+    position: relative;
+}
+.skinBlack .tooltip-box {
+    position: absolute;
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    z-index: 10;
+    font-size: 12px;
+}
+.skinBlack .tooltip-box:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    border-left: 10px solid #000;
+    border-bottom: 10px solid transparent;
+}
+.skinBlack .tooltip.leftTop .tooltip-box {
+    left: 0;
+    bottom: 100%;
+    margin-bottom: 10px;
+}
+.skinBlack .tooltip.leftTop .tooltip-box:after {
+    left: 0;
+}
+.skinBlack .tooltip.leftBottom .tooltip-box {
+    left: 0;
+    top: 100%;
+    margin-top: 10px;
+}
+.skinBlack .tooltip.leftBottom .tooltip-box:after {
+    bottom: 100%;
+    left: 0;
+    top: auto;
+    border-bottom: none;
+    border-top: 10px solid transparent;
+}
+
+
+
+/* 뱃지 */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-left: 4px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    line-height: 1em;
+    text-align: center;
+    font-size: 12px;
+}
+.badge.absolute {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    z-index: 10;
+}
+.badge.circle {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border-radius: 50%;
+    line-height: 20px;
+}
+.badge.red {
+    background: #e43e2b;
+    color: #fff;
+}
+
+
+
+/*--------------------------------------------------------*/
+/* Skin Black */
+/* Widget */
+/*--------------------------------------------------------*/
+
+/* 헤더 */
+.skinBlack .header {
+    padding: 20px 10px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+.skinBlack .header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .header .logo {
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+}
+.skinBlack .gnb {
+    float: right;
+    margin: 0;
+    margin-right: 100px;
+    padding: 0;
+    list-style: none;
+}
+.skinBlack .gnb:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .gnb li {
+    float: left;
+    margin-left: 20px;
+}
+.skinBlack .gnb li a {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+}
+.skinBlack .gnb li a span {
+    position: relative;
+}
+.skinBlack .gnb li a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+.skinBlack .gnb li a:hover span:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -8px;
+    border-bottom: 2px solid #000;
+}
+.skinBlack .header-member {
+    float: right;
+}
+.skinBlack .header-memberList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.skinBlack .header-memberList,
+.skinBlack .header-member .profile {
+    display: inline-block;
+    vertical-align: middle;
+}
+.skinBlack .header-memberList li a {
+    display: block;
+}
+.skinBlack .header-member .profile {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #e9e9e9;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.skinBlack .header.shop {
+    padding: 0;
+    text-align: center;
+}
+.skinBlack .header.shop .header-top {
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+}
+.skinBlack .header.shop .header-top:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .header.shop .header-top .memberMenu {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.skinBlack .header.shop .header-top .memberMenu:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .header.shop .header-top .memberMenu li {
+    margin-left: 15px;
+    float: left;
+}
+.skinBlack .header.shop .header-top .memberMenu li a {
+    display: block;
+    color: #fff;
+}
+.skinBlack .header.shop .header-body {
+    position: relative;
+    padding: 20px 10px;
+}
+.skinBlack .header.shop .logo {
+    position: absolute;
+    left: 10px;
+    top: 35px;
+}
+.skinBlack .header.shop .header-search {
+    display: inline-block;
+}
+.skinBlack .header.shop .header-recentSearch {
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+.skinBlack .header.shop .header-recentSearch li {
+    display: table-cell;
+}
+.skinBlack .header.shop .header-recentSearch li a {
+    display: block;
+}
+.skinBlack .header.shop .searchBox .inputText {
+    width: 300px;
+}
+.skinBlack .header.shop .snsList {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}
+.skinBlack .header.shop .gnb {
+    float: none;
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #c1c1c1;
+}
+.skinBlack .header.shop .gnb li {
+    display: table-cell;
+    float: none;
+}
+
+
+/* sns 소셜 리스트 */
+.skinBlack .snsList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.skinBlack .snsList:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .snsList li {
+    float: left;
+    margin-left: 8px;
+}
+.skinBlack .snsList li .icon.round svg {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
+
+/* 헤더 */
+.skinBlack .footer {
+    position: relative;
+    padding: 10px 20px;
+}
+.skinBlack .footer-listWrapper {
+    background: #eaeaea;
+}
+.skinBlack .footer-listWrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .footer-list:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .footer-list {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.skinBlack .footer-list li {
+    float: left;
+}
+.skinBlack .footer-list li a {
+    display: block;
+    padding: 10px;
+}
+.skinBlack .footer .snsList {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.skinBlack .footer .snsList .icon.round svg {
+    width: 10px;
+    height: 10px;
+}
+.skinBlack .footer-bottom {
+    margin-top: 20px;
+}
+.skinBlack .footer-bottom:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .footer-bottom .logo {
+    float: left;
+    font-size: 30px;
+}
+.skinBlack .footer-copyright {
+    float: left;
+    margin-left: 40px;
+}
+.skinBlack .footer-sitemap {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border-top: 1px solid #eee;
+}
+.skinBlack .footer-sitemap ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.skinBlack .footer-sitemap .depth1:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .footer-sitemap .depth1 {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+.skinBlack .footer-sitemap a {
+    display: block;
+    padding: 5px     10px;
+}
+.skinBlack .footer-sitemap .depth1 > li {
+    display: table-cell;
+}
+.skinBlack .footer-sitemap .depth1 > li > a {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* 최글 글 리스트 포스트 */
+.skinBlack .post:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .post-unit {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-bottom: 1px solid #eee;
+}
+.skinBlack .post-unit:first-child {
+    margin-top: 0;
+}
+.skinBlack .post-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.2em;
+}
+.skinBlack .post-title .date {
+    font-size: 12px;
+    color: #666;
+}
+.skinBlack .post-title,
+.skinBlack .post-thumb {
+    display: table-cell;
+    vertical-align: top;
+}
+.skinBlack .post-thumb {
+    padding-right: 20px;
+}
+.skinBlack .post-thumb a {
+    display: block;
+}
+.skinBlack .post-thumb,
+.skinBlack .post-thumb .emptyImg {
+    width: 250px;
+    height: 180px;
+}
+.skinBlack .post-thumb .emptyImg {
+    display: block;
+}
+.skinBlack .post-bottom {
+    margin-top: 10px;
+}
+.skinBlack .post-bottom dl {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 13px;
+}
+.skinBlack .post-bottom dl:first-child {
+    margin-left: -4px;
+}
+.skinBlack .post-bottom dl:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.skinBlack .post-bottom dt,
+.skinBlack .post-bottom dd {
+    float: left;
+    margin: 0;
+    margin-left: 4px;
+}
+.skinBlack .post-bottom dt .title {
+    vertical-align: middle;
+}
+.skinBlack .post.twoTothree {
+    width: 66%;
+}
+.skinBlack .post.twoTothree .post-thumb,
+.skinBlack .post.twoTothree .post-thumb .emptyImg {
+    width: 150px;
+    height: 100px;
+}
+.skinBlack .post.twoTothree .post-title {
+    font-size: 20px;
+}
+.skinBlack .post.twoTothree .post-bottom,
+.skinBlack .post.twoTothree .post-text {
+    margin: 0;
+}
+.skinBlack .post.twoTothree .tagList {
+    font-size: 12px;
+}
+.tagList svg {
+    vertical-align: middle;
+    line-height: 1em;
+    width: 14px;
+    height: 14px;
+}
+.skinBlack .post.oneTothree {
+    width: 33%;
+}
+.skinBlack .post.oneTothree .post-thumb,
+.skinBlack .post.oneTothree .post-thumb .emptyImg {
+    width: 100px;
+    height: 70px;
+}
+.skinBlack .post.oneTothree .post-thumb .emptyImg svg {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+.skinBlack .post.oneTothree .post-title {
+    font-size: 18px;
+}
+.skinBlack .post.thumbnail .post-unit {
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+.skinBlack .post.thumbnail .post-thumb {
+    display: block;
+    margin-bottom: 20px;
+}
+.skinBlack .post.twoTothree.thumbnail .post-thumb,
+.skinBlack .post.twoTothree.thumbnail .post-thumb .emptyImg {
+    width: 100%;
+    height: 350px;
+}
+.skinBlack .post.twoTothree.thumbnail .post-title {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.skinBlack .post.twoTothree.thumbnail .tagList {
+    margin-top: 10px;
+}
+.skinBlack .post.oneTothree.thumbnail .post-thumb,
+.skinBlack .post.oneTothree.thumbnail .post-thumb .emptyImg {
+    width: 100%;
+    height: 200px;
+}
+.skinBlack .post.col2 {
+    width: 50%;
+}
+.skinBlack .post.col2 .post-thumb,
+.skinBlack .post.col2 .post-thumb .emptyImg {
+    width: 100%;
+    height: 300px;
+}
+.skinBlack .post.col2 .post-thumb,
+.skinBlack .post.col2 .post-thumb .emptyImg {
+    width: 100%;
+    height: 300px;
+}
+.skinBlack .post.col4 {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.skinBlack .post.col4 .post-unit {
+    width: 50%;
+    display: block;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.skinBlack .post.col4 .post-thumb,
+.skinBlack .post.col4 .post-thumb .emptyImg {
+    width: 100%;
+    height: 300px;
+}
