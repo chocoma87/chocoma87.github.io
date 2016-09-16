@@ -1,7 +1,8 @@
 # chocoma87's Portfolio
 
-My name is [Moon Shinwoo](http://twitter.com/dancow)
+프론트 엔드 개발자 문신우 포트폴리오 입니다. 
 
+2016 프로젝트
 * [Bastards Book of Regular Expressions](http://regex.bastardsbook.com/)  - A free ebook on how to use regular expressions for everyday informational purposes
 
 * [Eye Heart New York](http://tumblr.eyeheartnewyork.com) - A Tumblr of my New York photos
