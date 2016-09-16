@@ -7,6 +7,10 @@
 
 2016
 * [Xelf](http://regex.bastardsbook.com/)  - 웹사이트 저작도구 웹어플리케이션 UI 제작 (html, css, javascript)
+<dl>
+ <dt>사용 언어</dt>
+ <dd>HTML, CSS, Javascript, jQuery</dd>
+</dl>
 
 * [Secure Shape](http://tumblr.eyeheartnewyork.com) - 3D 프린팅 컨텐츠 유통 웹사이트 UI 제작
 
