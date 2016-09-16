@@ -68,7 +68,7 @@
                     while (c.charAt(0)==' ') {
                         c = c.substring(1);
                     }
-                    if (c.indexOf(name) == 0) {
+                    if (c.indexOf(name) === 0) {
                         return c.substring(name.length,c.length);
                     }
                 }
@@ -95,7 +95,7 @@
                     if(key === skin){
                         theClass = options[key];
                     }
-                };
+                }
 
                 return theClass;
             },
@@ -107,7 +107,7 @@
                 // 클래스명이 있어야 해당 클래스로 바꿈
                 if(Object.keys(skinClass).length < $('.selectTheme-list').find('a').length){
                     console.error('옵션으로 모든 스킨의 클래스명 전달해 줘야함');
-                    return
+                    return;
                 }
 
                 var $target = $(target),
@@ -177,7 +177,7 @@
 
         }
 
-    }
+    };
 
     // 함수 실행
     // 스킨별로 변경해줄 클래스 전달해준다
@@ -192,5 +192,3 @@
 
 
 })(jQuery);
-
-
