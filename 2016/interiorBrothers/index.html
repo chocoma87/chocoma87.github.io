@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>인테리어 브라더스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="인테리어 브라더스">
+    <meta name="format-detection" content="telephone=no">
+
+    @@include('include/includefiles.html')
+
+</head>
+
+
+
+<body class="index">
+
+    <div class="modal"></div>
+
+
+    <div class="wrapper">
+
+        <div class="header">
+
+            <div class="header-top">
+                <a href="index.html" class="header-logo"><img src="images/logo.png" alt="인테리어 브라더스"/></a>
+                <h1 class="header-title"><span>인테리어 브라더스</span></h1>
+
+                <svg class="header-menuToggle" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                    <rect class="first" x="0" y="10" width="90" height="12"></rect>
+                    <rect class="middle" x="0" y="43" width="90" height="12"></rect>
+                    <rect class="last" x="0" y="80" width="90" height="12"></rect>
+                </svg>
+
+            </div>
+
+            @@include('include/gnb.html')
+
+        </div>
+
+
+        <div class="contents">
+
+            <section class="yellow index-unit item01">
+                <div class="box">
+                    <h2 class="indexTitle">나에게 맞는<br/>인테리어 전문가를 찾으세요</h2>
+                </div>
+
+                <div class="section textCenter mt20">
+                    <a href="concierge_01.html" class="button round black textYellow big search"><span>컨시어지 시작하기</span></a>
+                </div>
+
+                <div class="section">
+                    <ul class="displayTable indexButton">
+                        <li class="displayTable-item">
+                            <a href="#introduction" class="triggerPopup">
+                                <div class="sectionTitle small">컨시어지란<br/>무엇인가요?</div>
+                                <div class="text">설명보러가기</div>
+                            </a>
+                        </li>
+                        <li class="displayTable-item">
+                            <a href="#introduction" class="triggerPopup">
+                                <div class="sectionTitle small">어떤 전문가들을<br/>찾을 수 있나요?</div>
+                                <div class="text">전문가 정보 보러가기</div>
+                            </a>
+                        </li>
+                        <li class="displayTable-item">
+                            <a href="#introduction" class="triggerPopup">
+                                <div class="sectionTitle small">전문가들을<br/>믿을 수 있나요?</div>
+                                <div class="text">당연한 선언문 보러가기</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section index-bottom">만약 지금 전문가를 찾고 싶지 않으시다면 멋진 인테리어 사진들을 감상해 보세요</span></div>
+            </section>
+
+
+            <section class="index-unit item02">
+                <div class="box">
+                    <h2 class="indexTitle">수준높은 전문가 포트폴리오</h2>
+                </div>
+
+                <div class="box textCenter">
+                    <strong class="textSmall">국내 최 정상급 전문가의 다양한 <br/> 포트폴리오를 보면서 아이디어를 <br/> 얻어 보는 건 어떠세요? <br/> 6,596개 멋진 공간에 대한 <br/> 포트폴리오 사진들이 있습니다.</strong>
+                    <div class="numCount">6,596</div>
+                </div>
+
+                <div class="section textCenter mt20">
+                    <a href="view_photo.html" class="button round black big"><span>포트폴리오 사진보기</span></a>
+                </div>
+
+                <div class="section index-bottom">공간을 만드는 사람들의 이야기가 궁금하시면 인테리어 브라더스가 제공하는 기사를 읽어 보세요</div>
+            </section>
+
+
+            <section class="index-unit yellow item03">
+                <div class="box">
+                    <h2 class="indexTitle">공간과 사람의 이야기</h2>
+                </div>
+
+                <div class="box textCenter">
+                    <strong class="textSmall">특별한 공간에는 특별한 전문가가 있습니다. <br/> 공간과 사람에 대한 이야기, 인테리어브라더스가 들려드립니다.</strong>
+                    <div class="imgWrapper m20">
+                        <img src="images/index_05.png" alt=""/>
+                    </div>
+                </div>
+
+                <div class="section textCenter marginNone">
+                    <a href="company_webros.html" class="button round black big textYellow"><span>다른 이야기 보러가기</span></a>
+                </div>
+
+                <div class="section index-bottom">아직 인테리어 브라더스의 <br/> 회원이 아니신가요?</div>
+            </section>
+
+
+            <section class="index-unit item04">
+                <div class="box">
+                    <h2 class="indexTitle">아직도 인테리어 브라더스의 회원이 아니신가요?</h2>
+                </div>
+
+                <div class="section textCenter">
+                    <strong class="textSmall">지금 가입하시면 <br class="iphone5"/> 더 많은 혜택을 보실 수 있습니다. </strong>
+                    <a href="sign_up_user.html" class="button round black big m20 textYellow"><span>3초만에 가입하기</span></a>
+                </div>
+
+                <div class="section textCenter">
+                    <strong class="textSmall">만약!<br/>인테리어, 건축관련 전문가 이시라면,</strong>
+                    <a href="sign_up_expert.html" class="button round yellow border m20 big"><span>전문가 가입하기</span></a>
+                </div>
+            </section>
+
+
+        </div> <!-- .contents -->
+
+
+
+        @@include('include/footer.html')
+
+
+        <!-- 팝업 -->
+        <div class="slider sliderDefault js_slider commonPopup" id="introduction">
+            <div class="frame js_frame">
+                <ul class="slides js_slides">
+                    <li class="js_slide">
+                        <div class="slider-inner">
+                            <div>
+                                <div class="indexTitle">인테리어 전문가를<br/>찾아주는 컨시어지 서비스</div>
+                            </div>
+                            <ol class="list textCenter">
+                                <li class="item01">
+                                    <div><strong>01</strong></div>
+                                    <div>간단한 정보 입력<br/>(약 2분 소요)</div>
+                                </li>
+                                <li class="item02">
+                                    <div><strong>02</strong></div>
+                                    <div>나의 조건에 맞는 포트폴리오 및 전문가 확인</div>
+                                </li>
+                                <li class="item03">
+                                    <div><strong>03</strong></div>
+                                    <div>'전문가 문의하기'를 통해전문가에게 연락</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="js_slide">
+                        <div class="slider-inner">
+                            <div class="indexTitle">인테리어 전문가를<br/>찾아주는 컨시어지 서비스</div>
+                            <p class="textSmall subText">인테리어브라더스는 신뢰가 가장 최우선이기 떄문에 다음과 같이 단계별 전문가 가입과정을 도입하여 신뢰를 구축하기 위해 노력하고 있습니다.</p>
+                            <ol class="list textCenter">
+                                <li class="item04">
+                                    <div><strong>01</strong></div>
+                                    <div>전문가 실명 인증 및 사업자 등록 인증</div>
+                                </li>
+                                <li class="item05">
+                                    <div><strong>02</strong></div>
+                                    <div>프로필,전문가 경력 등 자세한 필수 정보 입력</div>
+                                </li>
+                                <li class="item06">
+                                    <div><strong>03</strong></div>
+                                    <div>전문가 포트폴리오 사진 및 자세한 정보 등록</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li class="js_slide">
+                        <div class="slider-inner">
+                            <div class="indexTitle">신뢰회복 프로젝트</div>
+                            <p class="textSmall subText">"당연한 선언문"<br/>새로운 인테리어 문화를 위해, 뜻을 같이하는 전문가들과 함께 다음과 같은 캠페인을 진행하고 있습니다.</p>
+                            <div class="imgWrapper">
+                                <img src="images/index_slider_07.jpg" alt="인테리어 브라더스"/>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <span class="js_prev prev">이전</span>
+            <span class="js_next next">다음</span>
+
+            <a href="#" class="button block yellow big border close"><span>닫기</span></a>
+        </div>
+        <!-- 팝업 끝 -->
+
+
+
+
+    </div> <!-- .wrapper -->
+
+
+
+    <script src="js/jquery.js"></script>
+
+    <!-- 슬라이더 플러그인 -->
+    <script src="js/classList.js"></script>
+    <script src="js/lory.js"></script>
+
+    <script src="js/ui.js"></script>
+
+
+
+
+</body>
+
+
+
+</html>
