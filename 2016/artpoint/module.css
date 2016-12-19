@@ -1,0 +1,576 @@
+
+
+/*------------------------------------------------------------------*/
+/* module */
+/*------------------------------------------------------------------*/
+
+
+/* layout */
+.clearFix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
+
+/* 텍스트 */
+.textRed {
+    color: #ed2024;
+}
+.textGray {
+    color: #676767;
+}
+.textCenter {
+    text-align: center;
+}
+.textSmall {
+    font-size: 0.8em;
+}
+
+
+
+.sectionCategory {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.sectionCategory span {
+    position: relative;
+    color: #ed2024;
+    font-weight: 400;
+
+}
+.sectionCategory span:after {
+    content: '';
+    display: block;
+    width: 4em;
+    margin-top: 8px;
+    border-bottom: 2px solid #ed2024;
+}
+.sectionCategory.center {
+    text-align: center;
+}
+.sectionCategory.center span:after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* button */
+.button,
+.btn {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    text-align: center;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: inherit !important;
+    font-size: 16px !important;
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+.button:hover,
+.btn:hover {
+    cursor: pointer;
+}
+.button .eng,
+.button svg line{
+    transition: all 0.2s;
+}
+.button input[type="submit"] {
+    padding: 0;
+    margin: 0;
+    border: none;
+    -webkit-appearance: none;
+    font-size: inherit;
+    font-family: inherit;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+}
+.button.big {
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+}
+.button.block {
+    display: block;
+    width: 100%;
+}
+.button.round {
+    border-radius: 0 10px 0 0;
+}
+.button.black {
+    background: #000;
+    color: #fff;
+    box-shadow: inset 0 0 0 0 #ed2024;
+}
+.button.black:hover {
+    box-shadow: inset 600px 0 0 0 #ed2024;
+}
+.button.black:hover .eng,
+.button.white:hover .eng {
+    color: #FFAEAE;
+}
+.button.white:hover svg line,
+.button.black:hover svg line {
+    stroke: #FFAEAE;
+}
+.button.white {
+    background: #fff;
+    color: #000;
+    box-shadow: inset 0 0 0 0 #ed2024;
+}
+.button.white svg polyline {
+    stroke: #000;
+}
+.button.white:hover {
+    color: #fff;
+    box-shadow: inset 600px 0 0 0 #ed2024;
+}
+.button.white:hover svg polyline {
+    stroke: #fff;
+}
+
+
+.button.borderWhite {
+    border: 1px solid #fff;
+    color: #fff;
+    box-shadow: inset 0 0 0 0 #ed2024;
+}
+.button.borderWhite:hover {
+    box-shadow: inset 600px 0 0 0 #ed2024;
+}
+.button.borderWhite:hover .eng {
+    color: #ffc8c8;
+}
+.button.borderWhite:hover svg line {
+    stroke: #ffc8c8;
+}
+.button.red {
+    background: #ed2024;
+    color: #fff;
+    box-shadow: inset 0px 0 0 0 #000;
+}
+.button.red .eng {
+    color: #ffc8c8;
+}
+.button.red svg line {
+    stroke: #ffc8c8;
+}
+.button.red:hover {
+    box-shadow: inset 600px 0 0 0 #000;
+}
+.button.red:hover .eng {
+    color: #999;
+}
+.button.red:hover svg line {
+    stroke: #999;
+}
+.button .eng {
+    margin-left: 4px;
+    font-size: 1em;
+}
+
+
+
+.button svg {
+    display: inline-block;
+    width: 70px;
+    height: 18px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+.button svg polyline {
+    stroke: #fff;
+    fill: none;
+    stroke-width: 20px;
+}
+.button svg line {
+    stroke: #6d6d6d;
+    stroke-width: 10px;
+}
+.button .activeSvg {
+    z-index: 10;
+}
+
+
+
+
+
+
+/* list */
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.list.dashTop li {
+    position: relative;
+    padding-top: 10px;
+    margin-top: 28px;
+}
+.list.dashTop li:first-child {
+    margin-top: 0;
+}
+.list.dashTop li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    border-top: 2px solid #ed2024;
+}
+.list.dotWhite {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.list.dotWhite li {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.list.dotWhite li:first-child {
+    margin-top: 0;
+}
+.list.dotWhite li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+}
+.list.dashDiagnol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.list.dashDiagnol li {
+    position: relative;
+}
+.list.dashDiagnol li:before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin-left: -14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ed2024;
+    transform: rotate(-50deg);
+}
+.list.dashDiagnol.inline li {
+    display: inline-block;
+    padding-left: 25px;
+}
+.list.dashDiagnol.inline li:first-child {
+    padding-left: 0;
+}
+.list.dashDiagnol.inline li:first-child:before {
+    display: none;
+}
+.list.dashDiagnol.inline li:before {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+/* table */
+.table th {
+    font-weight: inherit;
+}
+.table th,
+.table td {
+
+}
+.table tr:first-child th,
+.table tr:first-child td {
+    padding-top: 0;
+}
+
+
+.pageTitle {
+    margin-bottom: 40px;
+    font-size: 52px;
+    text-align: center;
+    color: #555555;
+    font-weight: 600;
+}
+.company-section {
+    padding: 4.5% 0;
+}
+
+
+
+/* board page top */
+.xe_content {
+    font-size: 14px !important;
+}
+.board-top {
+    height: 240px;
+    padding: 45px 0;
+    text-align: center;
+    color: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.news .board-top {
+    padding: 55px 0;
+    margin-bottom: 70px;
+    color: #86786c;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.news .board-top {
+    background: url('../images/news_top.jpg') no-repeat center top;
+}
+.portfolio .board-top {
+    background: url('../images/portfolio_bg.jpg') no-repeat center top;
+}
+.board-top .title {
+    margin: 0;
+    font-size: 70px;
+}
+.board-top .subTitle {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+/* 이전글, 다음글 */
+.boardRead .prev-next ul {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.boardRead .prev-next ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.boardRead .prev-next li {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.boardRead .prev-nextList {
+    text-align: center;
+}
+.boardRead .prev-nextList li a {
+    display: block;
+}
+.boardRead .prev-next li i {
+    display: inline-block;
+    height: 50px;
+    width: 10%;
+    vertical-align: middle;
+    line-height: 50px;
+}
+.boardRead .prev-next li span {
+    display: inline-block;
+    width: 88%;
+    font-weight: 400;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.prev-nextList li.listBtn {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    margin-left: -6em;
+    width: 12em;
+}
+.boardRead .prev-next li.listBtn a {
+    height: 50px;
+    padding-right: 20px;
+}
+.boardRead .prev-next li.listBtn span {  
+    width: auto;
+    margin-top: 0;
+    line-height: 50px;
+}
+.boardRead .prev-next li.listBtn a:after {
+    display: none;
+}
+.boardRead .prev-next li.prev,
+.boardRead .prev-next li.next {
+    position: relative;
+    width: 16%;
+}
+.boardRead .prev-next li.prev a,
+.boardRead .prev-next li.next a {
+    position: relative;
+    max-height: 50px;
+    line-height: 1.2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.boardRead .prev-next li.prev a {
+    padding-right: 14px;
+}
+.boardRead .prev-next li.next a {
+    padding-left: 14px;
+}
+.boardRead .prev-next li.prev a:before,
+.boardRead .prev-next li.next a:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 1.4em;
+    top: 50%;
+    margin-top: -0.7em;
+    border-right: 1px solid #ccc;
+}
+.boardRead .prev-next li.prev a:before {
+    right: 0;
+}
+.boardRead .prev-next li.prev i {
+    margin-right: -0.2em;
+}
+.boardRead .prev-next li.next a:before {
+    left: 0;
+}
+.boardRead .prev-next li.next i {
+    margin-left: -0.2em;
+}
+.boardRead .prev-next li.prev {
+    float: left;
+    text-align: left;
+}
+.boardRead .prev-next li.next {
+    float: right;
+    text-align: right;
+}
+
+.itemList-title {
+    font-weight: 400;
+}
+
+
+
+
+
+/* 에니메이션 */
+.boxAnimation a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 5;
+    transition: all 0.3s;
+}
+.boxAnimation a:hover:after {
+    height: 100%;
+}
+.boxAnimation .moreBox {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    z-index: 6;
+}
+.boxAnimation .moreBox-line {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 15px 0;
+    background: none;
+    box-shadow: inset 0 0 0 0 #ed2024;
+    transition: all 0.3s 0.3s linear;
+}
+.boxAnimation a:hover .moreBox-line {
+    box-shadow: inset 800px 0 0 0 #ed2024;
+}
+.boxAnimation .moreBox-plus {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+}
+.boxAnimation .moreBox-plus:before,
+.boxAnimation .moreBox-plus:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: none;
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: all 0.3s 0.6s;
+}
+.boxAnimation .moreBox-plus:before {
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    margin-left: -1px;
+    transition-delay: 0.7s;
+}
+.boxAnimation .moreBox-plus:after {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+}
+.boxAnimation a:hover .moreBox-plus:before {
+    box-shadow: inset 0 100px 0 0 #fff;
+}
+.boxAnimation a:hover .moreBox-plus:after {
+    box-shadow: inset 100px 0 0 0 #fff;
+}
+.boxAnimation .moreBox-text {
+    display: inline-block;
+    line-height: 1em;
+    overflow: hidden;
+}
+.boxAnimation .moreBox-text span {
+    display: inline-block;
+    transform: translateY(-50px);
+    transition: all 0.1s 0.9s;
+}
+.boxAnimation a:hover .moreBox-text span {
+    transform: translateY(0px);
+}
