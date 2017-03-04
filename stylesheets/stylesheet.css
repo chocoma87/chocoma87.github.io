@@ -268,13 +268,14 @@ a {
 .main-content .year {
     margin-bottom: 4px;
 }
-.actocat {
-    width: 24px;
+.actocat  {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
     vertical-align: middle;
 }
 .actocat img {
-    margin-left: 5px;
-    font-size: 14px;
+    width: 24px;
     vertical-align: middle;
 }
 @media screen and (min-width: 64em){
